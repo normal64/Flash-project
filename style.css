@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(222, 254, 255);
+}
+#mainDiv {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+  
+#title button {
+    border: 1px solid gold;
+    color: burlywood;
+  }
+
+#questionForm {
+  display: none;
+  margin-top: 1%;
+  border: 2px rgba(197, 248, 235, 0.959) solid ;
+  /* display: flex;  */
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 30vw;
+  animation-name: appear;
+  animation-duration: 3s;
+}
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#questionForm textarea{
+  display: flex;
+    flex-direction: row;
+    max-width: 90%;
+}
+ #closeButton {
+   margin: 1% 1% 0 0;
+  width: 5%;
+  align-self: flex-end;
+}
+#closeButton:hover {
+  cursor: pointer;
+}
+
+#saveButton {
+  /* display: flex;
+    flex-direction: row; */
+    width: 40%;
+    text-align: center;
+    margin-top: 3%;;
+}
+#saveButton p {
+  height: 20%;
+  margin: 0;
+}
+#actualQuestionSet {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+/* border: 2px solid orangered; */
+max-width: 90vw;
+
+}
+/* //question form */
+.questionItself {
+  
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(170, 170, 170, 0.349);
+  border-opa;
+  min-width: 15%;
+  max-width: 25%;
+  margin: 1% 0 1% 0;
+  background-color: rgb(225, 255, 255);
+}
+.questionItself>h4 {
+  text-transform: uppercase;
+}
+.questionItself>p {
+  color: rgb(20, 145, 145);
+}
+.questionItself>p:hover {
+  cursor: pointer;
+}
+.questionItself>.functionalButtonsActualQuestion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.functionalButtonsActualQuestion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.questionItself>.functionalButtonsActualQuestion>.editButton {
+  border-color: aquamarine;
+  color: rgb(46, 131, 103);
+  text-transform: uppercase;
+}
+.questionItself>.functionalButtonsActualQuestion>.deleteButton {
+  /* border: 3px solid rgb(241, 163, 19); */
+  border-color: rgb(241, 163, 19);
+  color: rgb(156, 94, 0); 
+   text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+} 
